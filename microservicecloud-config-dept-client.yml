@@ -12,7 +12,7 @@ server:
     datasource:
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: org.gjt.mm.mysql.Driver
-      url: jdbc:mysql://localhost:3306/cloudDB01
+      url: jdbc:mysql://localhost:3306/cloudDB01?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&verifyServerCertificate=false&useSSL=false
       username: root
       password: 123456
       dbcp2:
@@ -22,7 +22,7 @@ server:
         max-wait-millis: 200
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.demo.springcloud.entities
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml
 
@@ -51,7 +51,7 @@ server:
     datasource:
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: org.gjt.mm.mysql.Driver
-      url: jdbc:mysql://localhost:3306/cloudDB02
+      url: jdbc:mysql://localhost:3306/cloudDB02?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&verifyServerCertificate=false&useSSL=false
       username: root
       password: 123456
       dbcp2:
@@ -63,7 +63,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.demo.springcloud.entities
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml
 
